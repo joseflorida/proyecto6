@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+          <script type="text/javascript" src="validar.js"> </script>
+  <body>
+
+    <style media="screen">
+      body{
+        background-color:#C0C0C0;
+      }
+    h3 {
+          font-family: fantasy;
+          font-size: 30px ;
+          color:red;
+        }
+    </style>
+
+<a href="listadoUsuarios.php">Listado de Usuarios</a><br>
+<h3>Insertar Usuario</h3>
+
+<form class="" action="insertarUusuario.php" method="post">
+<label for="Nombre">Nombre: </label>  <input type="text" name="nombre" id="input" value="" onFocus="this.value=''"><br>
+<label for="Apellidos">Apellidos: </label>  <input type="text" name="apellidos" id="input" value="" onFocus="this.value=''"><br>
+<label for="edad">Edad: </label>  <input type="text" name="edad" id="input" value="" onFocus="this.value=''"><br>
+<label for="curso">Curso: </label>  <input type="text" name="curso" id="input" value="" onFocus="this.value=''"><br>
+
+<input type="submit" onclick="validar" name="Insertar" onclick="validar()" value="Insertar" class="boton">
+</form>
+</section>
+
+<h3>Borrar Usuario</h3>
+
+<form class="" action="borrarUsuarios.php" method="post">
+  <label for="id">Id: </label> <input type="text" name="id" id="miCampo" value="" onFocus="this.value=''"><br>
+  <br>
+  <input type="submit" onclick="validar" name="Borrar" value="Borrar"  class="boton">
+</form>
+</section>
+
+<h3>Actualizar Usuario</h3>
+
+<form class="" action="actualizarUsuarios.php" method="post">
+<label for="id">Id: </label>  <input type="text" name="id" id="input" value="" onFocus="this.value=''"><br>
+<label for="nombre">Nombre: </label>  <input type="text" name="nombre" id="input" value="" onFocus="this.value=''"><br>
+<label for="apellidos">Apellidos: </label>  <input type="text" name="apellidos" id="input" value="" onFocus="this.value=''"><br>
+<label for="edad">Edad: </label>  <input type="text" name="edad" id="input" value="" onFocus="this.value=''"><br>
+<label for="curso">Curso: </label>  <input type="text" name="curso" id="input" value="" onFocus="this.value=''"><br>
+  <br>
+<input type="submit" name="Actualizar" onclick="validar()" value="Actualizar"  class="boton">
+</form>
+  </body>
+</html>
